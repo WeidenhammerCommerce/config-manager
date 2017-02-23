@@ -42,7 +42,7 @@ To use this we should inject the dependencies like
 public function __construct(
     EncryptorInterface $encryptor,
     Config $config,
-    \Praxisis\ConfigManager\Helper\ConfigManager $configManager)
+    \Hammer\ConfigManager\Helper\ConfigManager $configManager)
     {
     //var initialization
 }
