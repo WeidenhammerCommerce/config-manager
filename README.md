@@ -1,22 +1,22 @@
-#Hammer Config Manager
+# Hammer Config Manager
 
-##How to install?
+## How to install?
 
-###Install via composer (need to update for using github)
+### Install via composer (need to update for using github)
 
 1. `composer config repositories.hammer-config-manager git git@git.assembla.com:weidenhammer/internal-projects.config-manager.git`
 2. `composer require hammer/config-manager:dev-master`
 3. Enable the module: `bin/magento module:enable Hammer_ConfigManager`
 4. `bin/magento setup:upgrade`
 
-####Install downloading the code
+#### Install downloading the code
 
 1. Download the code from the repo
 2. Place it under `app/code` folder
 3. Enable the module: `bin/magento module:enable Hammer_ConfigManager`
 4. `bin/magento setup:upgrade`
 
-###How to use it?
+### How to use it?
 
 Set the environment you are working on (example: local, dev, stage, preprod, prod) using the following command
 
