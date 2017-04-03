@@ -2,10 +2,17 @@
 
 ##How to install?
 
-###Install via composer
+###Install via composer (need to update for using github)
 
 1. `composer config repositories.hammer-config-manager git git@git.assembla.com:weidenhammer/internal-projects.config-manager.git`
 2. `composer require hammer/config-manager:dev-master`
+3. Enable the module: `bin/magento module:enable Hammer_ConfigManager`
+4. `bin/magento setup:upgrade`
+
+####Install downloading the code
+
+1. Download the code from the repo
+2. Place it under `app/code` folder
 3. Enable the module: `bin/magento module:enable Hammer_ConfigManager`
 4. `bin/magento setup:upgrade`
 
@@ -29,9 +36,9 @@ For example:
 
 ```
 {
-  "Hammer_PaymentSetup::paypal/wpp/api_username": "direct-facilitator_api1.geoshack.com",
-  "Hammer_PaymentSetup::paypal/wpp/api_password": "FRWE5TD5JPGX8TDG",
-  "Hammer_PaymentSetup::paypal/wpp/api_signature": "AFcWxV21C7fd0v3bYYYRCpSSRl31AOsbMi0t56rdj7bZ7m9EkAVQQ1gr",
+  "Hammer_PaymentSetup::paypal/wpp/api_username": "direct-facilitator_api1.testmerchant.com",
+  "Hammer_PaymentSetup::paypal/wpp/api_password": "FOCQ5TD5JRNH8TDG",
+  "Hammer_PaymentSetup::paypal/wpp/api_signature": "AFcWxV21C7fe9m3bPOFHRpSSRl31AOsbMi0t56rdj7bZ7m9EkAVQQ1gr",
   "Hammer_PaymentSetup::paypal/wpp/sandbox_flag": 1
 }
 ```
@@ -50,4 +57,4 @@ public function __construct(
 
 after that we will be able to get the value like so:
 
-`$sandboxFlag = $this->configManager->getProperty('Praxisis_PaymentSetup::paypal/wpp/sandbox_flag');`
+`$sandboxFlag = $this->configManager->getProperty('Hammer_PaymentSetup::paypal/wpp/sandbox_flag');`
