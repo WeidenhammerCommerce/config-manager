@@ -44,7 +44,7 @@ class Environment extends Command
                 new InputArgument(
                     self::NAME_ARGUMENT,
                     InputArgument::OPTIONAL,
-                    'environment [local, dev, stage, prepod, prod]'
+                    'environment [local, dev, stage, preprod, prod]'
                 ),
             ]);
         parent::configure();
