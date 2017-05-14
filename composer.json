@@ -6,13 +6,10 @@
   },
   "type": "magento2-module",
   "version": "0.0.1",
-  "license": [
-    "OSL-3.0",
-    "AFL-3.0"
-  ],
+  "license": "MIT",
   "authors": [
     {
-      "name": "Hammer",
+      "name": "Weidenhammer",
       "email": "ecommerce@mhammer.net",
       "homepage": "https://www.hammer.net",
       "role": "Leader"
